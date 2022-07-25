@@ -1,0 +1,88 @@
+﻿@model Quote
+<title>Shanvo Print  -Get quote</title>
+@section metatags{
+    <meta name="description" content="Best and Reliable Painting Service Company" />
+    <meta name="keywords" content="Shanvo Print, pre painting, post painting, lagos painting services,Best and Reliable Painting Service Company" />
+    <meta name="author" content="www.shanvoprint.com.ng" />
+    <meta name="MobileOptimized" content="320" />
+}
+
+<partial name="_Header" />
+<!--  Quote Request Start -->
+<div class="container-fluid bg-secondary my-5">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-7 py-5 py-lg-0">
+                <h6 class="text-primary text-uppercase font-weight-bold">Get A Quote</h6>
+                <h1 class="mb-4">Request A Free Quote</h1>
+                <p class="mb-4">Not sure how much it would cost to give your home the beauty? Need an estimate on our painting and cleaning services ? Send us a request and get a detailed estimate free of charge within 24 hours.</p>
+                <div class="row">
+                    <div class="col-sm-4">
+                        <h1 class="text-primary mb-2" data-toggle="counter-up">20</h1>
+                        <h6 class="font-weight-bold mb-4">SKilled Experts</h6>
+                    </div>
+                    <div class="col-sm-4">
+                        <h1 class="text-primary mb-2" data-toggle="counter-up">1050</h1>
+                        <h6 class="font-weight-bold mb-4">Happy Clients</h6>
+                    </div>
+                    <div class="col-sm-4">
+                        <h1 class="text-primary mb-2" data-toggle="counter-up">2500</h1>
+                        <h6 class="font-weight-bold mb-4">Complete Projects</h6>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-5">
+                <div class="bg-primary py-5 px-4 px-sm-5">
+                    <h3>@ViewBag.Message</h3>
+                    <form class="py-5" asp-action="quote" asp-controller="Home">
+                        <div class="form-group">
+                            <input type="text" asp-for="Name" class="form-control border-0 p-4" placeholder="Your Name" required="required" />
+                        </div>
+                        <div class="form-group">
+                            <input type="email" asp-for="Email" class="form-control border-0 p-4" placeholder="Your Email" required="required" />
+                        </div>
+                        <div class="form-group">
+                            <input type="number" asp-for="Phone" class="form-control border-0 p-4" placeholder="Your Phone Number" />
+                        </div>
+                        <div class="form-group">
+                            <select asp-for="Service" class="custom-select border-0 px-4" style="height: 47px;" required>
+                                <option selected>Select A Service</option>
+                                <option value="Painting ">Painting  </option>
+                                <option value="Fixing of wall paper ">Fixing of wall paper  </option>
+                                <option value="Pre - Painting Cleaning">Pre - Painting Cleaning </option>
+                                <option value="Post - Painting Cleaning">Post - Painting Cleaning </option>
+                                <option value="Quality Paint Production"> Quality Paint Production </option>
+                                <option value="Quality Paint  Supply ">Quality Paint  Supply   </option>
+                                <option value="General Printing ">General Printing  </option>
+                            </select>
+                        </div>
+                        <div class="input-group mb-3">
+                            <dnt-captcha asp-captcha-generator-max="30"
+                                         asp-captcha-generator-min="1"
+                                         asp-captcha-generator-language="English"
+                                         asp-captcha-generator-display-mode="NumberToWord"
+                                         asp-use-relative-urls="true"
+                                         asp-placeholder="Security code as a number"
+                                         asp-validation-error-message="Please enter the security code as a number."
+                                         asp-font-name="Tahoma"
+                                         asp-font-size="20"
+                                         asp-fore-color="#333333"
+                                         asp-back-color="#FCF6F5FF"
+                                         asp-text-box-class="form-control"
+                                         asp-text-box-template="<div class='input-group'><span class='input-group-text'><span class='bi-lock'></span></span>{0}</div>"
+                                         asp-validation-message-class="text-danger"
+                                         asp-refresh-button-class="bi-arrow-counterclockwise btn-lg"
+                                         asp-show-refresh-button="true"
+                                         asp-dir="ltr" />
+
+                        </div>
+                        <div>
+                            <button class="btn btn-dark btn-block border-0 py-3" type="submit">Get A Quote</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Quote Request Start -->

@@ -1,0 +1,105 @@
+﻿<partial name="_Header" />
+<!-- Hero Start -->
+<div class="container-fluid bg-primary py-5 bg-hero" style="margin-bottom: 90px;">
+    <div class="container py-5">
+        <div class="row justify-content-start">
+            <div class="col-lg-8 text-center text-lg-start">
+                <h1 class="display-1 text-dark">About Us</h1>
+                <div class="pt-2">
+                    <a asp-action="Index" asp-controller="Home" class="btn btn-secondary rounded-pill py-2 px-4 mx-2">Home</a>
+                    <a href="" class="btn btn-secondary rounded-pill py-2 px-4 mx-2">About Us</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Hero End -->
+<!-- About Start -->
+<div class="container-fluid py-5">
+    <div class="container py-5">
+        <div class="row gx-0 mb-3 mb-lg-0">
+            <div class="col-lg-6 my-lg-5 py-lg-5">
+                <div class="about-start bg-primary p-5">
+                    <h1 class="display-5 mb-4">Welcome To Shanvo Print</h1>
+                    <p>We want to do more than just paint your home or business. It is our goal to provide a level of service that goes above and beyond the norm in our industry. Our customers keep coming back to us for a reason – we live up to our promises and treat our customers as we would want to be treated.</p>
+                    <p>What you need to know about us is that we care about our customers and our reputation. We have built our clientele by providing exceptional service for a long time and we have now expanded our services due to the quality and integrity we provide. These attributes include:</p>
+                    <ul>
+                        <li><b>Trustworthiness:</b> We are bonded, licensed, and insured with reliable employees.</li>
+                        <li><b>Consistency:</b> Our strategic processes allow us to consistently provide quality workmanship with every project we complete.</li>
+                        <li><b>Commitment:</b>We guarantee our customer’s satisfaction – our crew foreman will ensure you are satisfied before we consider a job completed. We also offer warranties.</li>
+                        <li><b>Value:</b>Our prices are competitive and with our extended warranties, you can be sure you get the most value for your investment.</li>
+
+                    </ul>
+                    <a asp-action="Index" asp-controller="Home" class="btn btn-secondary rounded-pill py-md-3 px-md-5 mt-4">Contact Us</a>
+                </div>
+            </div>
+            <div class="col-lg-6" style="min-height: 400px;">
+                <div class="position-relative h-100">
+                    <img class="position-absolute w-100 h-100" src="~/img/about-1.jpg" style="object-fit: cover;">
+                </div>
+            </div>
+        </div>
+        <div class="row gx-0">
+            <div class="col-lg-6" style="min-height: 400px;">
+                <div class="position-relative h-100">
+                    <img class="position-absolute w-100 h-100" src="~/img/about-2.jpg" style="object-fit: cover;">
+                </div>
+            </div>
+            <div class="col-lg-6 my-lg-5 py-lg-5">
+                <div class="about-end bg-primary p-5">
+                    <h1 class="display-5 mb-4">Why Choose Us?</h1>
+                    <p>At The Shanvo Paint, we believe that our clients come first and we make it our mission to provide the highest level of service in our industry. If you are looking for a painting company that will complete high quality painting services on-time and within your budget, call us to receive a free quote for your next residential painting project.  </p>
+                    <a asp-action="Index" asp-controller="Home" class="btn btn-secondary rounded-pill py-md-3 px-md-5 mt-4">Get A Quote</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- About End -->
+<!-- Quote Start -->
+<div class="container-fluid bg-primary bg-quote py-5" style="margin: 90px 0;">
+    <div class="container py-5">
+        <div class="row g-0 justify-content-start">
+            <div class="col-lg-6">
+                <div class="bg-white text-center p-5">
+                    <h1 class="mb-4">Get A Quote</h1>
+                    <form>
+                        <div class="row g-3">
+                            <div class="col-12 col-sm-6">
+                                <input type="text" class="form-control bg-light border-0" placeholder="Your Name" style="height: 55px;">
+                            </div>
+                            <div class="col-12 col-sm-6">
+                                <input type="email" class="form-control bg-light border-0" placeholder="Your Email" style="height: 55px;">
+                            </div>
+                            <div class="col-12">
+                                <textarea class="form-control bg-light border-0 py-3" rows="2" placeholder="Message"></textarea>
+                            </div>
+                            <div class="col-12">
+                                <button class="btn btn-primary w-100 py-3" type="submit">Get A Quote</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Quote End -->
+<!-- Team Start -->
+<partial name="_TeamPartial" />
+<!-- Team End -->
+<!-- Call To Action Start -->
+<div class="container-fluid bg-primary bg-call-to-action py-5" style="margin-top: 90px;">
+    <div class="container py-5">
+        <div class="row g-0 justify-content-start">
+            <div class="col-lg-6">
+                <h1 class="display-5 mb-4">Do You Have Any Project?</h1>
+                <p class="fs-4 fw-normal">Whether you need new paint in your kitchen or own a warehouse that needs exterior paint, we are your trusted source for quality workmanship. Get to know us by calling to get an estimate the next time you are planning a new painting project.</p>
+                <a asp-action="Contact" asp-controller="Home" class="btn btn-secondary rounded-pill py-md-3 px-md-5 mt-4">Contact Us</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Call To Action Start -->
+
+<partial name="_Footerpartial" />
